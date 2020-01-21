@@ -6,7 +6,6 @@
 
 namespace MCTStickers.Cards {
   using System;
-  using MCTStickers.Cards;
   using MCTStickers.Extensions;
   using MCTStickers.Models;
   using Microsoft.Bot.Schema;

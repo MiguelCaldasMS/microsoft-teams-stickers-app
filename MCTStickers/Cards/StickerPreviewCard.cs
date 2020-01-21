@@ -29,17 +29,7 @@ namespace MCTStickers.Cards {
     /// </summary>
     /// <returns>An <see cref="Attachment"/>.</returns>
     public Attachment ToAttachment() {
-      var card = new ThumbnailCard {
-        Title = this.sticker.Name,
-        Images = new List<CardImage>()
-          {
-                    new CardImage
-                    {
-                        Alt = this.sticker.Name,
-                        Url = this.sticker.ImageUri.ToString()
-                    }
-                }
-      };
+      var card = new ThumbnailCard { Title = this.sticker.Name, Images = new List<CardImage>() { new CardImage { Alt = this.sticker.Name, Url = this.sticker.ImageUri.ToString() } } };
 
       return card.ToAttachment();
     }
